@@ -32,12 +32,9 @@ def create_interaction_chart():
     # High Task Ambiguity (+1 SD)
     y_high_ambiguity = [2.17, 4.41]
     
-    # Try to use Times New Roman or a similar serif font
-    try:
-        plt.rcParams['font.family'] = 'serif'
-        plt.rcParams['font.serif'] = ['Times New Roman', 'DejaVu Serif', 'Liberation Serif', 'serif']
-    except Exception:
-        plt.rcParams['font.family'] = 'serif'
+    # Use Times New Roman or a similar serif font
+    plt.rcParams['font.family'] = 'serif'
+    plt.rcParams['font.serif'] = ['Times New Roman', 'DejaVu Serif', 'Liberation Serif', 'serif']
     
     # Plot each line with specified styles
     # Low Task Ambiguity: Dotted line, Square markers, Dark Grey
